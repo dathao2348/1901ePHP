@@ -17,13 +17,13 @@ $ten='';
 $giatien='';
 $tonkho='';
 $nhacungcap='';
-$ngaytao='';
+
 
 if(isset($_GET['id'])){
 
     $product_id=(int) $_GET['id'];
 
-    $sqlSelect="SElECT* FROM employees WHERE id=" .$product_id;
+    $sqlSelect="SElECT* FROM product WHERE id=" .$product_id;
 
     $result=mysqli_query($connection,$sqlSelect);
 
@@ -35,7 +35,7 @@ if(isset($_GET['id'])){
     $ten=isset($row['giatien']) ? $row['giatien']:'';
     $ten=isset($row['tonkho']) ? $row['tonkho']:'';
     $ten=isset($row['nhacungcap']) ? $row['nhacungcap']:'';
-    $ten=isset($row['ngaytao']) ? $row['ngaytao']:'';
+
 }
 ?>
 <div class="container">
@@ -62,10 +62,7 @@ if(isset($_GET['id'])){
                         <label>Nhà cung cấp</label>
                         <input type="text" class="form-control" name="nhacungcap" value="<?php echo $nhacungcap ?>">
                     </div>
-                    <div class="form-group">
-                        <label>Ngày tạo</label>
-                        <input type="text" class="form-control" name="ngaytao" value="<?php echo $ngaytao ?>">
-                    </div>
+
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>

@@ -11,7 +11,7 @@
  * Nạp kết nối CSDL
  * */
 include_once "config.php";
-$sqlSelect="SELECT * FROM employees";
+$sqlSelect="SELECT * FROM product";
 /*
  * mysqli_query(tham số 1, tham số 2) là hàm thực hiện câu query mysql
  * tham số 1: chính là biến kết nối csdl $connection
