@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Tạo app CRUD thêm sửa xóa CSDL</h1>
+<pre>
+    1-  Tạo CSDL: database: appcrud( chọn collation là utf8)
+    2-  Tạo bảng employees(nhân viên) chạy query tạo bảng
+    3-  Học cách kết nối đến CSDL
+
+    Để kết nối đến CSDL mysql sử dụng hàm mysqli_connet()
+    Hàm này  có 4 tham số cần truyền vào:
+    - Tham số 1 địa chỉ ip của máy chủ MYSQL(localhost)
+    -Tham số 2 username của máy chủ(root)
+    - Tham số 3 pasword của máy chủ( để rỗng)
+    - Tham số 4 ( tên CSDL)
+
+    //Create connection
+    $conn=mysqli_connect($servername,$username,$password,$dbname);
+</pre>
+</body>
+</html>
